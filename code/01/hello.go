@@ -135,15 +135,15 @@ func apply(op func(int, int) int, a,b int) int {
 	return op(a,b)
 }
 
-func main() {
-	fmt.Println(
-		apply(func(a int, b int) int {
-			return int(math.Pow(
-				float64(a), float64(b)))
-		}, 3,5))
-		a,b := 3,5
-		swap(&a,&b)
-}
+// func main() {
+// 	fmt.Println(
+// 		apply(func(a int, b int) int {
+// 			return int(math.Pow(
+// 				float64(a), float64(b)))
+// 		}, 3,5))
+// 		a,b := 3,5
+// 		swap(&a,&b)
+// }
 
 func swap(a,b *int) {
 	*b, *a = *a, *b
